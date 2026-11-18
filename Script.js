@@ -128,7 +128,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 5. Navbar Box Shadow on Scroll
+    // 5. Project Category Filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    if (filterBtns.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filterValue === 'all' || category === filterValue) {
+                        card.classList.remove('hide');
+                    } else {
+                        card.classList.add('hide');
+                    }
+                });
+            });
+        });
+    }
+
+    // 6. Navbar Box Shadow on Scroll
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
         if (navbar) {

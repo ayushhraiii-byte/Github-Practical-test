@@ -5,14 +5,15 @@ A clean, modern, and responsive personal portfolio website built with HTML5, CSS
 ## 🚀 Features
 
 - **Responsive Design**: Looks great on smartphones, tablets, and desktops.
-- **Modern Theme**: Clean dark palette with glowing accents and sleek typography.
+- **Dark & Light Modes**: Seamless theme switcher with persistent local storage.
 - **Interactive Navigation**: Sticky header with smooth scrolling, active section tracking, and mobile hamburger menu.
 - **Showcase Sections**:
-  - Hero introduction with quick social links & availability status
-  - About Me with personal highlights
-  - Core Skills & tech stack
-  - Featured Projects with links & technology tags
-  - Interactive Contact Form with validation feedback
+  - **Hero**: Introduction with quick social links & availability status badge
+  - **About Me**: Personal bio & key highlights
+  - **Skills**: Technology grid covering frontend, backend, and version control
+  - **Experience & Education**: Timeline tracing education and development journey
+  - **Featured Projects**: Filterable project gallery (Frontend, Web Apps, APIs) with tech badges
+  - **Contact**: Interactive validation form with responsive feedback
 - **Zero Heavy Dependencies**: Lightweight and fast loading with vanilla JavaScript and Font Awesome icons.
 
 ## 🛠️ Built With
